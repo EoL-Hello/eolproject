@@ -3,5 +3,5 @@ from django.urls import path, include
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path('', include('login.urls')),  # appname 앱의 urls.py를 포함
+    #path('', include('login.urls')),  # appname 앱의 urls.py를 포함
 ]

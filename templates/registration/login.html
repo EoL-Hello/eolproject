@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>로그인</title>
 </head>
 <body>
-    <h2>Login</h2>
+    <h2>로그인</h2>
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
+        {{ form.as_p }}  <!-- 로그인 폼 -->
+        <button type="submit">로그인</button>
     </form>
+    <p>아직 계정이 없으신가요? <a href="{% url 'signup' %}">회원가입</a></p>
 </body>
 </html>
